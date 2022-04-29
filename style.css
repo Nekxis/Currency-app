@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,600;1,200;1,600;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Raleway', sans-serif;
+}
+.burger-button{
+    color: #000;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    top: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+}
+.open{
+    display: block;
+    top: 7px;
+}
+.close{
+    display: none;
+    color: #FFF;
+    left: 200px;
+    top: 10px;
+}
+.menu-container{
+    height: 100vh;
+    background: #000;
+    text-align: justify;
+    transition: 0.7s;
+    color: #000;
+    width: 0;
+}
+.active{
+    width: 20vw;
+}
+.list-element{
+    padding: 0.9em;
+}
+.list-element a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.list-element a:hover{
+    font-weight: bold;
+    padding-left: 10px;
+}
+.list-element a:focus{
+    font-weight: bold;
+    padding-left: 12px;
+    border-left: 1px solid white;
+}
+.close-menu-list{
+    display: none;
+
+}
