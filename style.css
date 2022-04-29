@@ -23,17 +23,16 @@ html{
     margin-left: 10px;
     cursor: pointer;
     display: block;
-    position: fixed;
 }
 .open{
     display: block;
     top: 7px;
+    position: fixed;
 }
 .close{
-    display: none;
+    display: inline-block;
     color: #FFF;
-    left: 200px;
-    top: 10px;
+    text-align: right;
 
 }
 .menu-container{
@@ -49,6 +48,11 @@ html{
 }
 .list-element{
     padding: 0.9em;
+}
+.close-li{
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
 }
 .list-element a{
     color: #FFF;
