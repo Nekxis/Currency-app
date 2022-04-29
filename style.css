@@ -7,6 +7,12 @@
 html{
     font-family: 'Raleway', sans-serif;
 }
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20vw;
+}
 .burger-button{
     color: #000;
     outline: none;
@@ -28,6 +34,7 @@ html{
     color: #FFF;
     left: 200px;
     top: 10px;
+
 }
 .menu-container{
     height: 100vh;
@@ -62,5 +69,10 @@ html{
 }
 .close-menu-list{
     display: none;
-
+}
+.main{
+    position: absolute;
+    width: 100%;
+    left: 300px;
+    height: 100%;
 }
