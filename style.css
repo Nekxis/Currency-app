@@ -30,6 +30,7 @@ html{
     top: 7px;
     position: fixed;
     z-index: 1000;
+
 }
 .close{
     display: inline-block;
@@ -74,6 +75,7 @@ html{
 }
 .close-menu-list{
     display: none;
+    font-size: 1px;
 }
 .main{
     position: absolute;
@@ -126,4 +128,47 @@ html{
     background: transparent;
     border: none;
 }
-
+.cards-container{
+    display: grid;
+    grid-template-columns:  repeat(3, 2fr);
+    grid-template-rows:  repeat(3, auto);
+    gap: 1vw;
+    height: 80vh;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+}
+.card{
+    background: #000;
+    width: 25vw;
+    border-radius: 10px;
+    height: 20vh;
+    color: #FFF;
+    padding: 1em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.left-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+.bottom{
+    display: flex;
+}
+.bottom p {
+    padding: .5em;
+    font-weight: bold;
+}
+.flaga{
+    position: relative;
+    width: 50%;
+}
+.flaga p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

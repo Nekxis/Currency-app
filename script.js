@@ -5,25 +5,34 @@ const menuList = document.querySelector('.menu-list');
 const inputContainer = document.querySelector('.input-container');
 const searchInput = document.querySelector('.text-field');
 const clearButton = document.querySelector('.clear-input');
-const apiKey = '4fea2ddd350e4b5397126f3b42e462b2'
-const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}`
+const liNav = document.querySelector('li')
+const apiKey = '4fea2ddd350e4b5397126f3b42e462b2';
+const symbol = 'EUR';
+const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}&symbols=${symbol}`
 
-const fetchAPI = () => {
-    fetch(url)
-        .then((res) => {console.log(res.json())})
-}
-
+// const fetchAPI = () => {
+//     fetch(url)
+//         .then((res) => res.json())
+//         .then((data) => {
+//             console.log((data));
+//         })
+//
+// }
+const addClassOpenUp = () =>{
+    menuList.classList.remove('close-menu-list');
+};
 const openUp = () => {
+    setTimeout(addClassOpenUp,500);
     menuContainer.classList.add('active');
     openBtn.style.display = 'none';
     closeBtn.style.display = 'block';
-    menuList.classList.remove('close-menu-list');
 };
 const closeUp = () => {
     menuContainer.classList.remove('active');
     openBtn.style.display = 'block';
     closeBtn.style.display = 'none';
     menuList.classList.add('close-menu-list')
+
 };
 
 const inputClear = () => {
@@ -52,5 +61,5 @@ document.addEventListener('click', (e) =>{
         inputContainer.style.borderBottomColor = '#d1d1d1';
     }
 });
-document.addEventListener('DOMContentLoaded', fetchAPI)
+// document.addEventListener('DOMContentLoaded', fetchAPI)
 
