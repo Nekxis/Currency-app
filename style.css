@@ -91,6 +91,9 @@ html{
 }
 .input-container{
     border-bottom: 1px solid #d1d1d1;
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
     padding: 1vh;
     transition: 0.4s;
 }
@@ -101,13 +104,14 @@ html{
     background: transparent;
     padding: 7px;
     border: none;
-    width: 20vw;
+    width: 25vw;
     text-align: left;
     outline: none;
 }
 .clear-input{
     font-size: 20px;
     margin-right: 0.7rem;
+    width: 3vw;
     cursor: pointer;
     outline: none;
     background: transparent;
