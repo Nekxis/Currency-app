@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -11,7 +11,7 @@
     <div class="nav">
         <button class="burger-button open"><i class="fa-solid fa-bars"></i></button>
         <div class="menu-container">
-            <ul class="menu-list">
+            <ul class="menu-list close-menu-list">
                 <li class="close-li"><button class="burger-button close"><i class="fa-solid fa-xmark"></i></button></li>
                 <li class="list-element home"><a href="#">HOME</a></li>
                 <li class="list-element"><a href="#">biggest changes</a></li>
@@ -22,7 +22,11 @@
     </div>
     <div class="main">
         <div class="search-box">
-            <input type="text" placeholder="Search for currency...">
+           <div class="input-container">
+                <input type="text" class="text-field" placeholder="Search for currency...">
+                <button class="clear-input"><i class="fa-solid fa-xmark"></i></button>
+                <button class="search-mark"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
         </div>
 
     </div>

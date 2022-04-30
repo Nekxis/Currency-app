@@ -35,7 +35,6 @@ html{
     display: inline-block;
     color: #FFF;
     text-align: right;
-
 }
 .menu-container{
     height: 100vh;
@@ -89,13 +88,38 @@ html{
     justify-content: center;
     align-items: center;
     height: 60px;
-    z-index: -2;
+}
+.input-container{
+    border-bottom: 1px solid #d1d1d1;
+    padding: 1vh;
+    transition: 0.4s;
+}
+.input-container:hover{
+    border-bottom:1px solid #000;
 }
 .search-box input{
     background: transparent;
     padding: 7px;
-    border-radius: 10px;
-    border: 1px solid grey;
+    border: none;
     width: 20vw;
     text-align: left;
+    outline: none;
 }
+.clear-input{
+    font-size: 20px;
+    margin-right: 0.7rem;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border: none;
+    display: none;
+}
+.search-mark{
+    outline: none;
+    font-size: 18px;
+    margin-right: 0.7rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
