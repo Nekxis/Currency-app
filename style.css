@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,600;1,200;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Source+Sans+Pro&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 html{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
 }
 .nav{
@@ -39,7 +40,7 @@ html{
 }
 .menu-container{
     height: 100vh;
-    background: #000;
+    background: #141414;
     text-align: justify;
     transition: 0.7s;
     color: #000;
@@ -159,16 +160,36 @@ html{
     display: flex;
 }
 .bottom p {
-    padding: .5em;
+    padding: .3em;
     font-weight: bold;
+    font-size: 25px;
+    top: 10%;
+}
+.bottom p:nth-child(1){
+    font-size: 35px;
+
+}
+.bottom p:nth-child(2){
+    margin-top: 5%;
+}
+.bottom p:nth-child(3){
+    margin-top: 5%;
 }
 .flaga{
     position: relative;
     width: 50%;
 }
-.flaga p{
+.flaga img{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 70%;
     transform: translate(-50%, -50%);
+    height: 50%;
+    width: 60%;
+    border-radius: 10px;
+    opacity: 80%;
+    box-shadow: 0 0 2em blue;
+}
+.cards-container:nth-child(1).flaga img{
+    box-shadow: 0 0 2em red;
 }

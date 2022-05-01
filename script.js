@@ -1,3 +1,5 @@
+import {currencyData, priceCurrency} from "./datseBase.js";
+
 const openBtn = document.querySelector('.open');
 const closeBtn = document.querySelector('.close');
 const menuContainer = document.querySelector('.menu-container');
@@ -9,7 +11,7 @@ const liNav = document.querySelector('li')
 const apiKey = '4fea2ddd350e4b5397126f3b42e462b2';
 const symbol = 'EUR';
 const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}&symbols=${symbol}`
-
+const body = document.querySelector('body');
 // const fetchAPI = () => {
 //     fetch(url)
 //         .then((res) => res.json())
@@ -18,11 +20,39 @@ const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}&symbols=${sy
 //         })
 //
 // }
-const addClassOpenUp = () =>{
-    menuList.classList.remove('close-menu-list');
-};
+const prepareElements = () => {
+    const cardSection = document.querySelector('.cards-container');
+    cardSection.innerHTML = "";
+    for (let i = 0; i < currencyData.length; i++) {
+        const newCard = document.createElement('div');
+        newCard.className = 'card';
+        newCard.setAttribute('id', `${currencyData[i].id}`)
+        newCard.innerHTML = ` 
+            <div class="left-part">
+               <h3>${currencyData[i].name}</h3>
+                  <div class="bottom">
+                           <p>${currencyData[i].symbol}</p>
+                           <p>${currencyData[i].price}</p>
+                           <p>${currencyData[i].name}</p>
+                  </div>
+            </div>
+            <div class="flaga">
+                 <img src='${currencyData[i].image} ' style="box-shadow: 0 0 2em ${currencyData[i].color};">
+            </div>
+        
+        
+        `
+        cardSection.appendChild(newCard);
+    }
+
+
+}
+
+
+
+
 const openUp = () => {
-    setTimeout(addClassOpenUp,500);
+    setTimeout(()=> menuList.classList.remove('close-menu-list'),500);
     menuContainer.classList.add('active');
     openBtn.style.display = 'none';
     closeBtn.style.display = 'block';
@@ -36,11 +66,11 @@ const closeUp = () => {
 };
 
 const inputClear = () => {
-   clearButton.addEventListener('click', () => {
-       searchInput.value = '';
-       clearButton.style.display = 'none';
-       inputContainer.style.borderBottomColor = '#d1d1d1';
-   })
+    clearButton.addEventListener('click', () => {
+        searchInput.value = '';
+        clearButton.style.display = 'none';
+        inputContainer.style.borderBottomColor = '#d1d1d1';
+    })
 };
 const inputActive = () => {
     if (searchInput.value !== ''){
@@ -62,4 +92,9 @@ document.addEventListener('click', (e) =>{
     }
 });
 // document.addEventListener('DOMContentLoaded', fetchAPI)
+document.addEventListener('DOMContentLoaded', prepareElements);
+
+
+
+
 
