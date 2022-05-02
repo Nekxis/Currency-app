@@ -1,4 +1,4 @@
-import {currencyData, priceCurrency} from "./datseBase.js";
+import {currencyData, priceCurrency} from "./img/datseBase.js";
 
 const openBtn = document.querySelector('.open');
 const closeBtn = document.querySelector('.close');
