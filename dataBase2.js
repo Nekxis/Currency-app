@@ -72,8 +72,7 @@ const currencyData=
         "color":"red"
         },
 
-        :
-        {
+        {"id":"ARS",
         "symbol": "AR$",
         "name": "Argentine Peso",
         "symbol_native": "$",
@@ -82,8 +81,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/ar.png",
         "color":"ligt-blue"
 },
-    "AUD": {
-    "symbol": "AU$",
+        {
+        "id":"AUD" ,
+        "symbol": "AU$",
         "name": "Australian Dollar",
         "symbol_native": "$",
         "code": "AUD",
@@ -91,8 +91,9 @@ const currencyData=
         "flag": 'http://flags.fmcdn.net/data/flags/normal/au.png',
         "color":"blue"
 },
-    "AZN": {
-    "symbol": "man.",
+        {
+        "id":"AZN" ,
+        "symbol": "man.",
         "name": "Azerbaijani Manat",
         "symbol_native": "ман.",
         "code": "AZN",
@@ -100,8 +101,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/az.png",
         "color":"light-blue"
 },
-    "BAM": {
-    "symbol": "KM",
+        {
+        "id":"BAM" ,
+        "symbol": "KM",
         "name": "Bosnia-Herzegovina Convertible Mark",
         "symbol_native": "KM",
         "code": "BAM",
@@ -109,8 +111,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/ba.png",
         "color":"blue"
 },
-    "BDT": {
-    "symbol": "Tk",
+        {
+        "id":"BDT" ,
+        "symbol": "Tk",
         "name": "Bangladeshi Taka",
         "symbol_native": "৳",
         "code": "BDT",
@@ -118,107 +121,108 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/bd.png",
         "color":"blue"
 },
-    "BGN": {
-    "symbol": "BGN",
+        {
+        "id":"BGN" ,
+        "symbol": "BGN",
         "name": "Bulgarian Lev",
         "symbol_native": "лв.",
         "code": "BGN",
         "name_plural": "Bulgarian leva",
         "flag": 'http://flags.fmcdn.net/data/flags/normal/bg.png',
         "color":"green"
-},
-    "BHD": {
-    "symbol": "BD",
+},{
+        "id":"BHD" ,
+        "symbol": "BD",
         "name": "Bahraini Dinar",
         "symbol_native": "د.ب.‏",
         "code": "BHD",
         "name_plural": "Bahraini dinars",
         "flag": 'http://flags.fmcdn.net/data/flags/normal/bh.png',
         "color":"red"
-},
-    "BIF": {
-    "symbol": "FBu",
+},{
+        "id":"BIF" ,
+        "symbol": "FBu",
         "name": "Burundian Franc",
         "symbol_native": "FBu",
         "code": "BIF",
         "name_plural": "Burundian francs",
         "flag": 'http://flags.fmcdn.net/data/flags/normal/bi.png',
         "color":"red"
-},
-    "BND": {
-    "symbol": "BN$",
+},{
+        "id":"BND" ,
+        "symbol": "BN$",
         "name": "Brunei Dollar",
         "symbol_native": "$",
         "code": "BND",
         "name_plural": "Brunei dollars",
         "flag": "http://flags.fmcdn.net/data/flags/normal/bn.png",
         "color":"yellow"
-},
-    "BOB": {
-    "symbol": "Bs",
+},{
+        "id":"BOB" ,
+        "symbol": "Bs",
         "name": "Bolivian Boliviano",
         "symbol_native": "Bs",
         "code": "BOB",
         "name_plural": "Bolivian bolivianos",
         "flag": "http://flags.fmcdn.net/data/flags/normal/bo.png",
         "color":"yellow"
-},
-    "BRL": {
-    "symbol": "R$",
+},{
+        "id":"BRL" ,
+        "symbol": "R$",
         "name": "Brazilian Real",
         "symbol_native": "R$",
         "flag": "http://flags.fmcdn.net/data/flags/normal/br.png",
         "code": "BRL",
         "name_plural": "Brazilian reals",
         "color":"green"
-},
-    "BWP": {
-    "symbol": "BWP",
+},{
+        "id":"BWP" ,
+        "symbol": "BWP",
         "name": "Botswanan Pula",
         "symbol_native": "P",
         "code": "BWP",
         "name_plural": "Botswanan pulas",
         "flag": "http://flags.fmcdn.net/data/flags/normal/bw.png",
         "color":"ligt-blue"
-},
-    "BYR": {
-    "symbol": "BYR",
+},{
+        "BYR":"BYR" ,
+        "symbol": "BYR",
         "name": "Belarusian Ruble",
         "symbol_native": "BYR",
         "code": "BYR",
         "name_plural": "Belarusian rubles",
         "flag": "http://flags.fmcdn.net/data/flags/normal/ru.png",
         "color":"blue"
-},
-    "BZD": {
-    "symbol": "BZ$",
+},{
+        "id":"BZD" ,
+        "symbol": "BZ$",
         "name": "Belize Dollar",
         "symbol_native": "$",
         "code": "BZD",
         "name_plural": "Belize dollars",
         "flag": "http://flags.fmcdn.net/data/flags/normal/bz.png",
         "color":"blue"
-},
-    "CDF": {
-    "symbol": "CDF",
+},{
+        "id":"CDF" ,
+        "symbol": "CDF",
         "name": "Congolese Franc",
         "symbol_native": "FrCD",
         "code": "CDF",
         "name_plural": "Congolese francs",
         "flag": "http://flags.fmcdn.net/data/flags/normal/dk.png",
         "color":"red"
-},
-    "CHF": {
-    "symbol": "CHF",
+},{
+        "id":"CHF" ,
+        "symbol": "CHF",
         "name": "Swiss Franc",
         "symbol_native": "CHF",
         "code": "CHF",
         "name_plural": "Swiss francs",
         "flag": "http://flags.fmcdn.net/data/flags/normal/ch.png",
         "color":"red"
-},
-    "CLP": {
-    "symbol": "CL$",
+},{
+        "id":"CLP" ,
+        "symbol": "CL$",
         "name": "Chilean Peso",
         "symbol_native": "$",
         "code": "CLP",
@@ -226,8 +230,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/cl.png",
         "color":"red"
 },
-    "CNY": {
-    "symbol": "CN¥",
+{
+        "id":"CNY",
+        "symbol": "CN¥",
         "name": "Chinese Yuan",
         "symbol_native": "CN¥",
         "code": "CNY",
@@ -235,89 +240,90 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/cn.png",
         "color":"red"
 },
-    "COP": {
-    "symbol": "CO$",
+{
+        "id":"COP" ,
+        "symbol": "CO$",
         "name": "Colombian Peso",
         "symbol_native": "$",
         "code": "COP",
         "name_plural": "Colombian pesos",
         "flag":  "http://flags.fmcdn.net/data/flags/normal/co.png",
         "color":"yellow"
-},
-    "CRC": {
-    "symbol": "₡",
+},{
+        "id":"CRC" ,
+        "symbol": "₡",
         "name": "Costa Rican Colón",
         "symbol_native": "₡",
         "code": "CRC",
         "name_plural": "Costa Rican colóns",
         "flag": 'http://flags.fmcdn.net/data/flags/normal/cr.png',
         "color":"blue"
-},
-    "CVE": {
-    "symbol": "CV$",
+},{
+         "id":"CVE" ,
+        "symbol": "CV$",
         "name": "Cape Verdean Escudo",
         "symbol_native": "CV$",
         "code": "CVE",
         "name_plural": "Cape Verdean escudos",
         "flag": 'http://flags.fmcdn.net/data/flags/normal/cv.png',
         "color":"blue"
-},
-    "CZK": {
-    "symbol": "Kč",
+},{
+        "id":"CZK" ,
+        "symbol": "Kč",
         "name": "Czech Republic Koruna",
         "symbol_native": "Kč",
         "code": "CZK",
         "name_plural": "Czech Republic korunas",
         "flag": 'http://flags.fmcdn.net/data/flags/normal/cz.png',
         "color":"red"
-},
-    "DJF": {
-    "symbol": "Fdj",
+},{
+        "id":"DJF" ,
+        "symbol": "Fdj",
         "name": "Djiboutian Franc",
         "symbol_native": "Fdj",
         "code": "DJF",
         "name_plural": "Djiboutian francs",
         "flag": "http://flags.fmcdn.net/data/flags/normal/dj.png",
         "color":"green"
-},
-    "DKK": {
-    "symbol": "Dkr",
+},{
+        "DKK":"DKK" ,
+        "symbol": "Dkr",
         "name": "Danish Krone",
         "symbol_native": "kr",
         "code": "DKK",
         "name_plural": "Danish kroner",
         "flag": 'http://flags.fmcdn.net/data/flags/normal/do.png',
         "color":"blue"
-},
-    "DOP": {
-    "symbol": "RD$",
+},{
+        "id":"DOP" ,
+        "symbol": "RD$",
         "name": "Dominican Peso",
         "symbol_native": "RD$",
         "code": "DOP",
         "name_plural": "Dominican pesos",
         "flag": 'http://flags.fmcdn.net/data/flags/normal/dm.png',
         "color":"green"
-},
-    "DZD": {
-    "symbol": "DA",
+},{
+        "id":"DZD" ,
+        "symbol": "DA",
         "name": "Algerian Dinar",
         "symbol_native": "د.ج.‏",
         "code": "DZD",
         "name_plural": "Algerian dinars",
         "flag": 'http://flags.fmcdn.net/data/flags/normal/dz.png',
         "color":"green"
-},
-    "EEK": {
-    "symbol": "Ekr",
+},{
+        "id":"EEK" ,
+        "symbol": "Ekr",
         "name": "Estonian Kroon",
         "symbol_native": "kr",
         "code": "EEK",
         "name_plural": "Estonian kroons",
         "flag": "http://flags.fmcdn.net/data/flags/normal/ee.png",
         "color":"blue"
-},
-    "EGP": {
-    "symbol": "EGP",
+},{
+        "id":"EGP" ,
+        "symbol": "EGP",
         "name": "Egyptian Pound",
         "symbol_native": "ج.م.‏",
         "code": "EGP",
@@ -325,8 +331,9 @@ const currencyData=
         "flag": 'http://flags.fmcdn.net/data/flags/normal/eg.png',
         "color":"red"
 },
-    "ERN": {
-    "symbol": "Nfk",
+{
+        "id":"ERN",
+        "symbol": "Nfk",
         "name": "Eritrean Nakfa",
         "symbol_native": "Nfk",
         "code": "ERN",
@@ -334,8 +341,9 @@ const currencyData=
         "flag": 'http://flags.fmcdn.net/data/flags/normal/er.png',
         "color":"red"
 },
-    "ETB": {
-    "symbol": "Br",
+{
+        "id":"ETB",
+        "symbol": "Br",
         "name": "Ethiopian Birr",
         "symbol_native": "Br",
         "code": "ETB",
@@ -343,8 +351,9 @@ const currencyData=
         "flag": 'http://flags.fmcdn.net/data/flags/normal/et.png',
         "color":"green"
 },
-    "GBP": {
-    "symbol": "£",
+{
+        "id":"GBP",
+        "symbol": "£",
         "name": "British Pound Sterling",
         "symbol_native": "£",
         "code": "GBP",
@@ -352,8 +361,9 @@ const currencyData=
         "flag": 'http://flags.fmcdn.net/data/flags/normal/gb.png',
         "color":"blue"
 },
-    "GEL": {
-    "symbol": "GEL",
+{
+        "GEL":"GEL",
+        "symbol": "GEL",
         "name": "Georgian Lari",
         "symbol_native": "GEL",
         "code": "GEL",
@@ -361,8 +371,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/ge.png",
         "color":"white"
 },
-    "GHS": {
-    "symbol": "GH₵",
+{
+        "id":"GHS",
+        "symbol": "GH₵",
         "name": "Ghanaian Cedi",
         "symbol_native": "GH₵",
         "code": "GHS",
@@ -370,8 +381,9 @@ const currencyData=
         "flag": 'http://flags.fmcdn.net/data/flags/normal/gh.png',
         "color":"red"
 },
-    "GNF": {
-    "symbol": "FG",
+{
+        "id":"GNF",
+        "symbol": "FG",
         "name": "Guinean Franc",
         "symbol_native": "FG",
         "code": "GNF",
@@ -379,8 +391,9 @@ const currencyData=
         "flag": 'http://flags.fmcdn.net/data/flags/normal/gq.png',
         "color":"green"
 },
-    "GTQ": {
-    "symbol": "GTQ",
+{
+        "id":"GTQ",
+        "symbol": "GTQ",
         "name": "Guatemalan Quetzal",
         "symbol_native": "Q",
         "code": "GTQ",
@@ -388,8 +401,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/gt.png",
         "color":"light-blue"
 },
-    "HKD": {
-    "symbol": "HK$",
+{
+        "id":"HKD",
+        "symbol": "HK$",
         "name": "Hong Kong Dollar",
         "symbol_native": "$",
         "code": "HKD",
@@ -397,8 +411,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/cn.png",
         "color":"red"
 },
-    "HNL": {
-    "symbol": "HNL",
+{
+        "id":"HNL",
+        "symbol": "HNL",
         "name": "Honduran Lempira",
         "symbol_native": "L",
         "code": "HNL",
@@ -406,8 +421,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/hn.png",
         "color": "blue"
 },
-    "HRK": {
-    "symbol": "kn",
+{
+        "id":"HRK",
+        "symbol": "kn",
         "name": "Croatian Kuna",
         "symbol_native": "kn",
         "code": "HRK",
@@ -455,8 +471,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/in.png",
         "color":"orange"
 },
-    "IQD": {
-    "symbol": "IQD",
+{
+        "id":"IQD",
+        "symbol": "IQD",
         "name": "Iraqi Dinar",
         "symbol_native": "د.ع.‏",
         "code": "IQD",
@@ -464,8 +481,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/iq.png",
         "color" :"red"
 },
-    "IRR": {
-    "symbol": "IRR",
+{
+        "id":"IRR",
+        "symbol": "IRR",
         "name": "Iranian Rial",
         "symbol_native": "﷼",
         "code": "IRR",
@@ -473,8 +491,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/ir.png",
         "color" :"red"
 },
-    "ISK": {
-    "symbol": "Ikr",
+{
+        "id":"ISK",
+        "symbol": "Ikr",
         "name": "Icelandic Króna",
         "symbol_native": "kr",
         "code": "ISK",
@@ -482,8 +501,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/is.png",
         "color" :"blue"
 },
-    "JMD": {
-    "symbol": "J$",
+{
+        "id":"JMD",
+        "symbol": "J$",
         "name": "Jamaican Dollar",
         "symbol_native": "$",
         "code": "JMD",
@@ -491,8 +511,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/jm.png",
         "color" :"green"
 },
-    "JOD": {
-    "symbol": "JD",
+{
+        "id":"JOD",
+        "symbol": "JD",
         "name": "Jordanian Dinar",
         "symbol_native": "د.أ.‏",
         "code": "JOD",
@@ -500,8 +521,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/jo.png",
         "color" :"green"
 },
-    "JPY": {
-    "symbol": "¥",
+{
+        "id":"JPY",
+        "symbol": "¥",
         "name": "Japanese Yen",
         "symbol_native": "￥",
         "code": "JPY",
@@ -509,8 +531,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/jp.png",
         "color" :"white"
 },
-    "KES": {
-    "symbol": "Ksh",
+{
+        "id":"KES",
+        "symbol": "Ksh",
         "name": "Kenyan Shilling",
         "symbol_native": "Ksh",
         "code": "KES",
@@ -518,8 +541,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/ke.png",
         "color" :"green"
 },
-    "KHR": {
-    "symbol": "KHR",
+{
+        "id":"KHR",
+        "symbol": "KHR",
         "name": "Cambodian Riel",
         "symbol_native": "៛",
         "code": "KHR",
@@ -527,8 +551,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/kh.png",
         "color" :"blue"
 },
-    "KMF": {
-    "symbol": "CF",
+{
+        "id":"KMF",
+        "symbol": "CF",
         "name": "Comorian Franc",
         "symbol_native": "FC",
         "code": "KMF",
@@ -536,8 +561,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/km.png",
         "color":"green"
 },
-    "KRW": {
-    "symbol": "₩",
+{
+        "id":"KRW",
+        "symbol": "₩",
         "name": "South Korean Won",
         "symbol_native": "₩",
         "code": "KRW",
@@ -545,8 +571,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/kr.png",
         "color":"white"
 },
-    "KWD": {
-    "symbol": "KD",
+{
+        "id":"KWD",
+        "symbol": "KD",
         "name": "Kuwaiti Dinar",
         "symbol_native": "د.ك.‏",
         "code": "KWD",
@@ -554,8 +581,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/kw.png",
         "color": "red"
 },
-    "KZT": {
-    "symbol": "KZT",
+{
+        "id":"KZT",
+        "symbol": "KZT",
         "name": "Kazakhstani Tenge",
         "symbol_native": "тңг.",
         "code": "KZT",
@@ -563,7 +591,8 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/kz.png",
         "color":"light-blue"
 },
-    "LBP": {
+{
+    "id":"LBP",
     "symbol": "LB£",
         "name": "Lebanese Pound",
         "symbol_native": "ل.ل.‏",
@@ -572,8 +601,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/lb.png" ,
         "color":"red"
 },
-    "LKR": {
-    "symbol": "SLRs",
+{
+        "id":"LKR",
+        "symbol": "SLRs",
         "name": "Sri Lankan Rupee",
         "symbol_native": "SL Re",
         "code": "LKR",
@@ -581,8 +611,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/lk.png",
         "color":"yellow"
 },
-    "LTL": {
-    "symbol": "Lt",
+{
+        "id":"LTL",
+        "symbol": "Lt",
         "name": "Lithuanian Litas",
         "symbol_native": "Lt",
         "code": "LTL",
@@ -590,8 +621,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/lt.png",
         "color":"yellow"
 },
-    "LVL": {
-    "symbol": "Ls",
+{
+        "id":"LVL",
+        "symbol": "Ls",
         "name": "Latvian Lats",
         "symbol_native": "Ls",
         "code": "LVL",
@@ -599,8 +631,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/lv.png",
         "color":"red"
 },
-    "LYD": {
-    "symbol": "LD",
+{
+        "id":"LYD",
+        "symbol": "LD",
         "name": "Libyan Dinar",
         "symbol_native": "د.ل.‏",
         "code": "LYD",
@@ -608,8 +641,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/ly.png",
         "color":"red"
 },
-    "MAD": {
-    "symbol": "MAD",
+{
+        "id":"MAD",
+        "symbol": "MAD",
         "name": "Moroccan Dirham",
         "symbol_native": "د.م.‏",
         "code": "MAD",
@@ -617,8 +651,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/ma.png",
         "color":"red"
 },
-    "MDL": {
-    "symbol": "MDL",
+{
+        "id":"MDL",
+        "symbol": "MDL",
         "name": "Moldovan Leu",
         "symbol_native": "MDL",
         "code": "MDL",
@@ -626,8 +661,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/md.png",
         "color":"yellow"
 },
-    "MGA": {
-    "symbol": "MGA",
+{
+        "id":"MGA",
+        "symbol": "MGA",
         "name": "Malagasy Ariary",
         "symbol_native": "MGA",
         "code": "MGA",
@@ -635,8 +671,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/mg.png",
         "color":"red"
 },
-    "MKD": {
-    "symbol": "MKD",
+{
+        "id":"MKD",
+        "symbol": "MKD",
         "name": "Macedonian Denar",
         "symbol_native": "MKD",
         "code": "MKD",
@@ -644,8 +681,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/mk.png",
         "color": "red"
 },
-    "MMK": {
-    "symbol": "MMK",
+{
+        "id":"MMK" ,
+        "symbol": "MMK",
         "name": "Myanma Kyat",
         "symbol_native": "K",
         "code": "MMK",
@@ -653,8 +691,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/mm.png",
         "color":"yellow"
 },
-    "MOP": {
-    "symbol": "MOP$",
+{
+        "id":"MOP" ,
+        "symbol": "MOP$",
         "name": "Macanese Pataca",
         "symbol_native": "MOP$",
         "code": "MOP",
@@ -662,8 +701,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/cn.png",
         "color":"red"
 },
-    "MUR": {
-    "symbol": "MURs",
+{
+        "id":"MUR" ,
+        "symbol": "MURs",
         "name": "Mauritian Rupee",
         "symbol_native": "MURs",
         "code": "MUR",
@@ -671,8 +711,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/mu.png",
         "color":"red"
 },
-    "MXN": {
-    "symbol": "MX$",
+{
+        "id":"MXN" ,
+        "symbol": "MX$",
         "name": "Mexican Peso",
         "symbol_native": "$",
         "code": "MXN",
@@ -680,8 +721,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/mx.png",
         "color": "green"
 },
-    "MYR": {
-    "symbol": "RM",
+{
+        "id":"MYR" ,
+        "symbol": "RM",
         "name": "Malaysian Ringgit",
         "symbol_native": "RM",
         "code": "MYR",
@@ -689,8 +731,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/my.png",
         "color":"red"
 },
-    "MZN": {
-    "symbol": "MTn",
+{
+        "id":"MZN" ,
+        "symbol": "MTn",
         "name": "Mozambican Metical",
         "symbol_native": "MTn",
         "code": "MZN",
@@ -698,8 +741,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/mz.png",
         "color":"yellow"
 },
-    "NAD": {
-    "symbol": "N$",
+{
+        "id":"NAD" ,
+        "symbol": "N$",
         "name": "Namibian Dollar",
         "symbol_native": "N$",
         "code": "NAD",
@@ -707,8 +751,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/na.png",
         "color":"red"
 },
-    "NGN": {
-    "symbol": "₦",
+{
+        "id":"NGN" ,
+        "symbol": "₦",
         "name": "Nigerian Naira",
         "symbol_native": "₦",
         "code": "NGN",
@@ -716,8 +761,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/ng.png",
         "color":"green"
 },
-    "NIO": {
-    "symbol": "C$",
+{
+        "id":"NIO" ,
+        "symbol": "C$",
         "name": "Nicaraguan Córdoba",
         "symbol_native": "C$",
         "code": "NIO",
@@ -725,8 +771,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/ni.png",
         "color":"blue"
 },
-    "NOK": {
-    "symbol": "Nkr",
+{
+        "id":"NOK" ,
+        "symbol": "Nkr",
         "name": "Norwegian Krone",
         "symbol_native": "kr",
         "code": "NOK",
@@ -734,8 +781,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/no.png",
         "color":"red"
 },
-    "NPR": {
-    "symbol": "NPRs",
+{
+        "id":"NPR" ,
+        "symbol": "NPRs",
         "name": "Nepalese Rupee",
         "symbol_native": "नेरू",
         "code": "NPR",
@@ -743,8 +791,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/np.png",
         "color":"white"
 },
-    "NZD": {
-    "symbol": "NZ$",
+{
+        "id":"NZD" ,
+        "symbol": "NZ$",
         "name": "New Zealand Dollar",
         "symbol_native": "$",
         "code": "NZD",
@@ -752,8 +801,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/nz.png",
         "color":"blue"
 },
-    "OMR": {
-    "symbol": "OMR",
+{
+        "id":"OMR" ,
+        "symbol": "OMR",
         "name": "Omani Rial",
         "symbol_native": "ر.ع.‏",
         "code": "OMR",
@@ -761,8 +811,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/om.png",
         "color":"red"
 },
-    "PAB": {
-    "symbol": "B/.",
+{
+        "id":"PAB" ,
+        "symbol": "B/.",
         "name": "Panamanian Balboa",
         "symbol_native": "B/.",
         "code": "PAB",
@@ -770,8 +821,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/pa.png",
         "color":"white"
 },
-    "PEN": {
-    "symbol": "S/.",
+{
+        "id":"PEN" ,
+        "symbol": "S/.",
         "name": "Peruvian Nuevo Sol",
         "symbol_native": "S/.",
         "code": "PEN",
@@ -779,8 +831,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/pe.png" ,
         "color":"red"
 },
-    "PHP": {
-    "symbol": "₱",
+{
+        "id":"PHP" ,
+        "symbol": "₱",
         "name": "Philippine Peso",
         "symbol_native": "₱",
         "code": "PHP",
@@ -788,8 +841,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/ph.png",
         "color":"blue"
 },
-    "PKR": {
-    "symbol": "PKRs",
+{
+        "id":"PKR" ,
+        "symbol": "PKRs",
         "name": "Pakistani Rupee",
         "symbol_native": "₨",
         "code": "PKR",
@@ -797,8 +851,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/pk.png",
         "color":"green"
 },
-    "PLN": {
-    "symbol": "zł",
+{
+        "id": "PLN" ,
+        "symbol": "zł",
         "name": "Polish Zloty",
         "symbol_native": "zł",
         "code": "PLN",
@@ -806,8 +861,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/pl.png",
         "color":"red"
 },
-    "PYG": {
-    "symbol": "₲",
+{
+        "id":"PYG" ,
+        "symbol": "₲",
         "name": "Paraguayan Guarani",
         "symbol_native": "₲",
         "code": "PYG",
@@ -815,28 +871,29 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/py.png",
         "color":"red"
 },
-    "QAR": {
-    "symbol": "QR",
+{
+        "id":"QAR" ,
+        "symbol": "QR",
         "name": "Qatari Rial",
         "symbol_native": "ر.ق.‏",
-
         "code": "QAR",
         "name_plural": "Qatari rials",
         "flag": "http://flags.fmcdn.net/data/flags/normal/qa.png",
         "color":"red"
 },
-    "RON": {
-    "symbol": "RON",
+{
+        "id":"RON" ,
+        "symbol": "RON",
         "name": "Romanian Leu",
         "symbol_native": "RON",
-
         "code": "RON",
         "name_plural": "Romanian lei",
         "flag": "http://flags.fmcdn.net/data/flags/normal/ro.png",
         "color":"red"
 },
-    "RSD": {
-    "symbol": "din.",
+{
+        "id":"RSD" ,
+        "symbol": "din.",
         "name": "Serbian Dinar",
         "symbol_native": "дин.",
         "code": "RSD",
@@ -844,8 +901,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/rs.png",
         "color":"red"
 },
-    "RUB": {
-    "symbol": "RUB",
+{
+        "id":"RUB" ,
+        "symbol": "RUB",
         "name": "Russian Ruble",
         "symbol_native": "руб.",
         "code": "RUB",
@@ -853,8 +911,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/ru.png",
         "color":"blue"
 },
-    "RWF": {
-    "symbol": "RWF",
+{
+        "id":"RWF" ,
+        "symbol": "RWF",
         "name": "Rwandan Franc",
         "symbol_native": "FR",
         "code": "RWF",
@@ -862,8 +921,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/rw.png",
         "color":"light-blue"
 },
-    "SAR": {
-    "symbol": "SR",
+{
+        "id":"SAR",
+        "symbol": "SR",
         "name": "Saudi Riyal",
         "symbol_native": "ر.س.‏",
         "code": "SAR",
@@ -871,8 +931,9 @@ const currencyData=
         "flag": 'http://flags.fmcdn.net/data/flags/normal/za.png',
         "color":"blue"
 },
-    "SDG": {
-    "symbol": "SDG",
+{
+        "id":"SDG" ,
+        "symbol": "SDG",
         "name": "Sudanese Pound",
         "symbol_native": "SDG",
         "code": "SDG",
@@ -880,8 +941,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/sd.png",
         "color":"red"
 },
-    "SEK": {
-    "symbol": "Skr",
+{
+        "id":"SEK" ,
+        "symbol": "Skr",
         "name": "Swedish Krona",
         "symbol_native": "kr",
         "code": "SEK",
@@ -889,8 +951,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/se.png",
         "color":"blue"
 },
-    "SGD": {
-    "symbol": "S$",
+{
+        "id":"SGD" ,
+        "symbol": "S$",
         "name": "Singapore Dollar",
         "symbol_native": "$",
         "code": "SGD",
@@ -898,8 +961,9 @@ const currencyData=
         "flag":  "http://flags.fmcdn.net/data/flags/normal/sg.png",
         "color":"red"
 },
-    "SOS": {
-    "symbol": "Ssh",
+{
+        "id":"SOS" ,
+        "symbol": "Ssh",
         "name": "Somali Shilling",
         "symbol_native": "Ssh",
         "code": "SOS",
@@ -907,8 +971,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/so.png",
         "color":"light-blue"
 },
-    "SYP": {
-    "symbol": "SY£",
+{
+        "id":"SYP" ,
+        "symbol": "SY£",
         "name": "Syrian Pound",
         "symbol_native": "ل.س.‏",
         "code": "SYP",
@@ -916,8 +981,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/sy.png",
         "color":"red"
 },
-    "THB": {
-    "symbol": "฿",
+{
+        "id":"THB",
+        "symbol": "฿",
         "name": "Thai Baht",
         "symbol_native": "฿",
         "code": "THB",
@@ -925,8 +991,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/th.png",
         "color":"red"
 },
-    "TND": {
-    "symbol": "DT",
+{
+        "id":"TND" ,
+        "symbol": "DT",
         "name": "Tunisian Dinar",
         "symbol_native": "د.ت.‏",
         "code": "TND",
@@ -934,8 +1001,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/tn.png",
         "color":"red"
 },
-    "TOP": {
-    "symbol": "T$",
+{
+        "id":"TOP" ,
+        "symbol": "T$",
         "name": "Tongan Paʻanga",
         "symbol_native": "T$",
         "code": "TOP",
@@ -943,8 +1011,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/to.png",
         "color":"red"
 },
-    "TRY": {
-    "symbol": "TL",
+{
+        "id":"TRY" ,
+        "symbol": "TL",
         "name": "Turkish Lira",
         "symbol_native": "TL",
         "code": "TRY",
@@ -952,8 +1021,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/tr.png",
         "color":"red"
 },
-    "TTD": {
-    "symbol": "TT$",
+{
+        "id":"TTD" ,
+        "symbol": "TT$",
         "name": "Trinidad and Tobago Dollar",
         "symbol_native": "$",
         "code": "TTD",
@@ -961,8 +1031,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/tt.png",
         "color": "red"
 },
-    "TWD": {
-    "symbol": "NT$",
+{
+        "id":"TWD" ,
+        "symbol": "NT$",
         "name": "New Taiwan Dollar",
         "symbol_native": "NT$",
         "code": "TWD",
@@ -970,8 +1041,9 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/tw.png",
         "color":"red"
 },
-    "TZS": {
-    "symbol": "TSh",
+{
+        "id":"TZS" ,
+        "symbol": "TSh",
         "name": "Tanzanian Shilling",
         "symbol_native": "TSh",
         "code": "TZS",
@@ -979,16 +1051,18 @@ const currencyData=
         "flag": "http://flags.fmcdn.net/data/flags/normal/tz.png",
         "color":"green",
 },
-    "UAH":"UAH {
-    "symbol": "₴",
+{
+        "id":"UAH" ,
+        "symbol": "₴",
         "name": "Ukrainian Hryvnia",
         "symbol_native": "₴",
         "code": "UAH",
         "name_plural": "Ukrainian hryvnias",
         "flag": "http://flags.fmcdn.net/data/flags/normal/ua.png",
         "color":"blue",
-},{
-        "UGX": "UGX",
+},
+{
+        "id": "UGX",
         "symbol": "USh",
         "name": "Ugandan Shilling",
         "symbol_native": "USh",
@@ -998,7 +1072,7 @@ const currencyData=
         "color":"yellow",
 },
 {
-        "UYU":"UYU" ,
+        "id":"UYU" ,
         "symbol": "$U",
         "name": "Uruguayan Peso",
         "symbol_native": "$",
@@ -1008,7 +1082,7 @@ const currencyData=
         "color":"white",
 },
 {
-        "UZS":"UZS",
+        "id":"UZS",
         "symbol": "UZS",
         "name": "Uzbekistan Som",
         "symbol_native": "UZS",
@@ -1055,7 +1129,7 @@ const currencyData=
         "name_plural": "CFA francs BCEAO",
         "flag": 'http://flags.fmcdn.net/data/flags/normal/gw.png',
         "color":"red",
-},
+},{
         "id":"YER",
         "symbol": "YR",
         "name": "Yemeni Rial",
@@ -1074,6 +1148,6 @@ const currencyData=
         "name_plural": "Zambian kwachas",
         "flag": "http://flags.fmcdn.net/data/flags/normal/zm.png",
         "color": "green",
-},}
+},
 ]
 export {currencyData, price}
