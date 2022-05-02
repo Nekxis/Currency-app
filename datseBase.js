@@ -1,10 +1,11 @@
+import {countriesFlags} from "./dataBaseNationalFlags.js"
 const priceCurrency = '4.51'
 const currencyData = [
     {
         id: 0,
         name: 'USD',
         price: priceCurrency,
-        image: './240px-Flag_of_the_United_States.svg.webp',
+        image: countriesFlags.USA.normal,
         symbol: '$',
         color: 'red',
     },

@@ -1,4 +1,5 @@
-var countriesFlags = {"Afghanistan": { "normal": "http://flags.fmcdn.net/data/flags/normal/af.png"},
+const countriesFlags =
+    {"Afghanistan": { "normal": "http://flags.fmcdn.net/data/flags/normal/af.png"},
     "Albania": { "normal": "http://flags.fmcdn.net/data/flags/normal/al.png"},
     "Algeria": { "normal": "http://flags.fmcdn.net/data/flags/normal/dz.png"},
     "Andorra": { "normal": "http://flags.fmcdn.net/data/flags/normal/ad.png"},
@@ -196,3 +197,5 @@ var countriesFlags = {"Afghanistan": { "normal": "http://flags.fmcdn.net/data/fl
     "Yemen": { "normal": "http://flags.fmcdn.net/data/flags/normal/ye.png"},
     "Zambia": { "normal": "http://flags.fmcdn.net/data/flags/normal/zm.png"},
     "Zimbabwe": { "normal": "http://flags.fmcdn.net/data/flags/normal/zw.png"}};
+
+export {countriesFlags};
