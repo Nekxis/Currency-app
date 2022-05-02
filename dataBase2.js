@@ -36,7 +36,7 @@ const currencyData=
                 "price":currencyPrice,
         },
         {
-            "ID":"AED",
+            "id":"AED",
             "symbol": "AED",
             "name": "United Arab Emirates Dirham",
             "symbol_native": "د.إ.‏",
@@ -205,7 +205,7 @@ const currencyData=
         "color":"ligt-blue",
             "price":currencyPrice,
 },{
-        "BYR":"BYR" ,
+        "id":"BYR" ,
         "symbol": "BYR",
         "name": "Belarusian Ruble",
         "symbol_native": "BYR",
@@ -317,7 +317,7 @@ const currencyData=
         "color":"green",
             "price":currencyPrice,
 },{
-        "DKK":"DKK" ,
+        "id":"DKK" ,
         "symbol": "Dkr",
         "name": "Danish Krone",
         "symbol_native": "kr",
@@ -401,7 +401,7 @@ const currencyData=
         "price":currencyPrice,
 },
 {
-        "GEL":"GEL",
+        "id":"GEL",
         "symbol": "GEL",
         "name": "Georgian Lari",
         "symbol_native": "GEL",

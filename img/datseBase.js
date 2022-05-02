@@ -1,4 +1,4 @@
-import {countriesFlags} from "../dataBaseNationalFlags.js"
+import {countriesFlags} from "./dataBaseNationalFlags.js"
 const priceCurrency = '4.51'
 const currency= [
     {
