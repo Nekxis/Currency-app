@@ -1,5 +1,5 @@
 const countriesFlags =
-    {"Afghanistan": { "normal": "http://flags.fmcdn.net/data/flags/normal/af.png"},
+    {"Afghanistan": { "normal": "A"},
     "Albania": { "normal": "http://flags.fmcdn.net/data/flags/normal/al.png"},
     "Algeria": { "normal": "http://flags.fmcdn.net/data/flags/normal/dz.png"},
     "Andorra": { "normal": "http://flags.fmcdn.net/data/flags/normal/ad.png"},
