@@ -1,5 +1,4 @@
-import {currencyData, priceCurrency} from "./img/datseBase.js";
-
+import {currencyData, price} from "./dataBase2.js";
 const openBtn = document.querySelector('.open');
 const closeBtn = document.querySelector('.close');
 const menuContainer = document.querySelector('.menu-container');
@@ -26,21 +25,18 @@ const prepareElements = () => {
     for (let i = 0; i < currencyData.length; i++) {
         const newCard = document.createElement('div');
         newCard.className = 'card';
-        newCard.setAttribute('id', `${currencyData[i].id}`)
         newCard.innerHTML = ` 
             <div class="left-part">
-               <h3>${currencyData[i].name}</h3>
+               <h3>${currencyData[i].symbol.name}</h3>
                   <div class="bottom">
                            <p>${currencyData[i].symbol}</p>
                            <p>${currencyData[i].price}</p>
-                           <p>${currencyData[i].name}</p>
+                           <p>${currencyData[i].symbol_native}</p>
                   </div>
             </div>
             <div class="flaga">
-                 <img src='${currencyData[i].image} ' style="box-shadow: 0 0 2em ${currencyData[i].color};">
+                 <img src='${currencyData[i].flag} ' style="box-shadow: 0 0 2em ${currencyData[i].color};">
             </div>
-        
-        
         `
         cardSection.appendChild(newCard);
     }

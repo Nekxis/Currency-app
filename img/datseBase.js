@@ -1,6 +1,6 @@
 import {countriesFlags} from "../dataBaseNationalFlags.js"
 const priceCurrency = '4.51'
-const currencyData = [
+const currency= [
     {
         id: 0,
         name: 'USD',
