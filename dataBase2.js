@@ -425,7 +425,7 @@ const currencyData=[{
     "JPY": {
     "symbol": "¥",
         "name": "Japanese Yen",
-        "symbol_native": "￥"
+        "symbol_native": "￥",
         "code": "JPY",
         "name_plural": "Japanese yen"
 },
@@ -737,8 +737,6 @@ const currencyData=[{
     "symbol": "RWF",
         "name": "Rwandan Franc",
         "symbol_native": "FR",
-        "decimal_digits": 0,
-        "r
         "code": "RWF",
         "name_plural": "Rwandan francs"
 },
