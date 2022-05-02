@@ -1,4 +1,4 @@
-import {currencyData, price} from "./dataBase2.js";
+import {currencyData, currencyPrice} from "./dataBase2.js";
 const openBtn = document.querySelector('.open');
 const closeBtn = document.querySelector('.close');
 const menuContainer = document.querySelector('.menu-container');
@@ -27,7 +27,7 @@ const prepareElements = () => {
         newCard.className = 'card';
         newCard.innerHTML = ` 
             <div class="left-part">
-               <h3>${currencyData[i].symbol.name}</h3>
+               <h3>${currencyData[i].id}</h3>
                   <div class="bottom">
                            <p>${currencyData[i].symbol}</p>
                            <p>${currencyData[i].price}</p>
