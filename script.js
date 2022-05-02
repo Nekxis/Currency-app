@@ -27,7 +27,7 @@ const prepareElements = () => {
         newCard.className = 'card';
         newCard.innerHTML = ` 
             <div class="left-part">
-               <h3>${currencyData[i].id}</h3>
+               <h3>${currencyData[i].name}</h3>
                   <div class="bottom">
                            <p>${currencyData[i].symbol}</p>
                            <p>${currencyData[i].price}</p>

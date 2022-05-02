@@ -115,7 +115,7 @@ const currencyData=
         {
         "id":"BAM" ,
         "symbol": "KM",
-        "name": "Bosnia-Herzegovina Convertible Mark",
+        "name": "Bosnia-Herzegovina CM",
         "symbol_native": "KM",
         "code": "BAM",
         "name_plural": "Bosnia-Herzegovina convertible marks",
@@ -131,7 +131,7 @@ const currencyData=
         "code": "BDT",
         "name_plural": "Bangladeshi takas",
         "flag": "http://flags.fmcdn.net/data/flags/normal/bd.png",
-        "color":"blue",
+        "color":"green",
                 "price":currencyPrice,
 },
         {
