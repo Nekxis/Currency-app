@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 html{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed',  sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
 }
@@ -141,9 +141,9 @@ html{
 }
 .card{
     background: #000;
-    width: 25vw;
+    width: 30vw;
     border-radius: 10px;
-    height: 20vh;
+    height: 25vh;
     color: #FFF;
     padding: 1em;
     position: relative;
@@ -156,24 +156,26 @@ html{
     justify-content: space-between;
     width: 50%;
 }
+.country-name{
+    font-size: 20px;
+}
 .bottom{
     display: flex;
 }
 .bottom p {
     padding: .3em;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 15px;
     top: 10%;
+    display: inline-block;
 }
 .bottom p:nth-child(1){
-    font-size: 35px;
+    font-size: 25px;
 
 }
 .bottom p:nth-child(2){
     margin-top: 5%;
-}
-.bottom p:nth-child(3){
-    margin-top: 5%;
+    font-size: 20px;
 }
 .flaga{
     position: relative;
@@ -184,7 +186,7 @@ html{
     top: 30%;
     left: 70%;
     transform: translate(-50%, -50%);
-    height: 50%;
+    height: 60%;
     width: 60%;
     border-radius: 10px;
     opacity: 80%;
