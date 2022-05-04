@@ -48,8 +48,9 @@ const openUp = () => {
     closeBtn.style.display = 'block';
 };
 const searchBar = () => {
-    const inputValue = '';
-    console.log(document.querySelector(`.${inputValue}`));
+    const inputValue = searchInput.value;
+    const card = document.querySelector(`.${inputValue}`);
+    console.log(card);
 }
 const closeUp = () => {
     menuContainer.classList.remove('active');
@@ -79,7 +80,10 @@ const inputActive = () => {
 
 openBtn.addEventListener('click', openUp);
 closeBtn.addEventListener('click', closeUp);
-searchInput.addEventListener('keyup', inputActive);
+searchInput.addEventListener('keyup', () =>{
+    inputActive();
+    searchBar();
+});
 document.addEventListener('click', (e) =>{
     if (e.target === searchInput) {
         inputContainer.style.borderBottomColor = '#000';
