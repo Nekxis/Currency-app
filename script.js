@@ -11,6 +11,7 @@ const cards = document.querySelector('.card');
 const apiKey = '4fea2ddd350e4b5397126f3b42e462b2';
 const symbol = 'EUR';
 const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}&symbols=${symbol}`;
+
 // const fetchAPI = () => {
 //     fetch(url)
 //         .then((res) => res.json())
@@ -24,14 +25,13 @@ const prepareElements = () => {
     for (let i = 0; i < currencyData.length; i++) {
         const newCard = document.createElement('div');
         newCard.id =`${currencyData[i].id}`;
-        newCard.className = 'card';
+        newCard.className = `card ${currencyData[i].symbol} ${currencyData[i].name}`;
         newCard.innerHTML = ` 
             <div class="left-part">
                <h2 class="country-name">${currencyData[i].name}</h2>
                   <div class="bottom">
                            <p>${currencyData[i].symbol}</p>
                            <p>${currencyData[i].price} ${currencyData[0].symbol_native}</p>
-                          
                   </div>
             </div>
             <div class="flaga">
@@ -48,7 +48,8 @@ const openUp = () => {
     closeBtn.style.display = 'block';
 };
 const searchBar = () => {
-
+    const inputValue = '';
+    console.log(document.querySelector(`.${inputValue}`));
 }
 const closeUp = () => {
     menuContainer.classList.remove('active');
@@ -88,7 +89,6 @@ document.addEventListener('click', (e) =>{
 });
 // document.addEventListener('DOMContentLoaded', fetchAPI)
 document.addEventListener('DOMContentLoaded', prepareElements);
-console.log(cards)
 
 
 
