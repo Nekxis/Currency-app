@@ -9,8 +9,8 @@ const clearButton = document.querySelector('.clear-input');
 const liNav = document.querySelector('li');
 const cards = document.querySelector('.card');
 const apiKey = '4fea2ddd350e4b5397126f3b42e462b2';
-const symbol = 'EUR';
-const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}&symbols=${symbol}`;
+
+// const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}&symbols=${symbol}`;
 
 // const fetchAPI = () => {
 //     fetch(url)
@@ -48,10 +48,24 @@ const openUp = () => {
     closeBtn.style.display = 'block';
 };
 const searchBar = () => {
+
     const inputValue = searchInput.value;
-    const card = document.querySelector(`.${inputValue}`);
-    console.log(card);
-}
+    // console.log(document.querySelector(`.${inputValue}`))
+    currencyData.forEach(card => {
+        const chuj = card.name;
+        const show = chuj.includes(inputValue);
+        if (!show) {
+            document.querySelectorAll(`.${inputValue}`).forEach(element => {
+                element.style.display = 'block'
+            })
+        } else {
+            document.querySelectorAll(`.${inputValue}`).forEach(element => {
+                    element.style.display = 'none'
+                }
+            )
+        };
+    });
+};
 const closeUp = () => {
     menuContainer.classList.remove('active');
     openBtn.style.display = 'block';
@@ -80,10 +94,9 @@ const inputActive = () => {
 
 openBtn.addEventListener('click', openUp);
 closeBtn.addEventListener('click', closeUp);
-searchInput.addEventListener('keyup', () =>{
-    inputActive();
-    searchBar();
-});
+searchInput.addEventListener('keyup', inputActive);
+searchInput.addEventListener('input', searchBar);
+
 document.addEventListener('click', (e) =>{
     if (e.target === searchInput) {
         inputContainer.style.borderBottomColor = '#000';
