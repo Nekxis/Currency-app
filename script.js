@@ -6,7 +6,8 @@ const menuList = document.querySelector('.menu-list');
 const inputContainer = document.querySelector('.input-container');
 const searchInput = document.querySelector('.text-field');
 const clearButton = document.querySelector('.clear-input');
-const liNav = document.querySelector('li')
+const liNav = document.querySelector('li');
+const cards = document.querySelector('.card');
 const apiKey = '4fea2ddd350e4b5397126f3b42e462b2';
 const symbol = 'EUR';
 const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}&symbols=${symbol}`;
@@ -40,14 +41,15 @@ const prepareElements = () => {
         cardSection.appendChild(newCard);
     }
 }
-
 const openUp = () => {
     setTimeout(()=> menuList.classList.remove('close-menu-list'),500);
     menuContainer.classList.add('active');
     openBtn.style.display = 'none';
     closeBtn.style.display = 'block';
 };
+const searchBar = () => {
 
+}
 const closeUp = () => {
     menuContainer.classList.remove('active');
     openBtn.style.display = 'block';
@@ -86,7 +88,7 @@ document.addEventListener('click', (e) =>{
 });
 // document.addEventListener('DOMContentLoaded', fetchAPI)
 document.addEventListener('DOMContentLoaded', prepareElements);
-
+console.log(cards)
 
 
 
