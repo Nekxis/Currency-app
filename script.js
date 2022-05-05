@@ -48,22 +48,28 @@ const openUp = () => {
     closeBtn.style.display = 'block';
 };
 const searchBar = () => {
-
+    const cards = document.querySelectorAll('.card');
+    console.log(cards.name)
     const inputValue = searchInput.value;
     // console.log(document.querySelector(`.${inputValue}`))
     currencyData.forEach(card => {
         const chuj = card.name;
         const show = chuj.includes(inputValue);
-        if (!show) {
-            document.querySelectorAll(`.${inputValue}`).forEach(element => {
-                element.style.display = 'block'
-            })
-        } else {
-            document.querySelectorAll(`.${inputValue}`).forEach(element => {
-                    element.style.display = 'none'
-                }
-            )
-        };
+        console.log(show);
+        // if (show) {
+        //     cards.forEach(element => {
+        //         element.style.display = 'block'
+        //     })
+        // } else {
+        //     cards.forEach(element => {
+        //             element.style.display = 'none'
+        //     })
+        // }
+        // if (!show) {
+        //     document.querySelectorAll(`.${show}`).forEach(element => {
+        //         element.style.display = 'none'
+        //     })
+        // }
     });
 };
 const closeUp = () => {
