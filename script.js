@@ -53,18 +53,23 @@ const searchBar = () => {
     const cardSection = document.querySelector('.cards-container');
     const inputValue = searchInput.value;
 
+
     currencyData.forEach(card => {
         const names = card.name;
+        const lowerNames = card.name.toLowerCase();
+        console.log(lowerNames)
         const id = card.id;
+        const lowerId = card.id.toLowerCase();
         const symbols = card.symbol_native;
-        const show = names.includes(inputValue) || id.includes(inputValue) || symbols.includes(inputValue);
+        const show = names.includes(inputValue) || id.includes(inputValue) || lowerNames.includes(inputValue) ||
+            symbols.includes(inputValue) || lowerId.includes(inputValue);
         const element = document.querySelector(`#${id}`);
         if (show === true){
             element.style.display = 'flex'
         } else {
             element.style.display = 'none';
         }
-        
+
 
     });
 };
