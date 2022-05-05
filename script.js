@@ -102,7 +102,9 @@ openBtn.addEventListener('click', openUp);
 closeBtn.addEventListener('click', closeUp);
 searchInput.addEventListener('keyup', inputActive);
 searchInput.addEventListener('input', searchBar);
-
+clearButton.addEventListener('click', () => {
+     document.location.reload();
+} )
 document.addEventListener('click', (e) =>{
     if (e.target === searchInput) {
         inputContainer.style.borderBottomColor = '#000';
