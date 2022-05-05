@@ -9,7 +9,6 @@ const clearButton = document.querySelector('.clear-input');
 const liNav = document.querySelector('li');
 const cards = document.querySelector('.card');
 const apiKey = '4fea2ddd350e4b5397126f3b42e462b2';
-
 // const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}&symbols=${symbol}`;
 
 // const fetchAPI = () => {
@@ -21,7 +20,7 @@ const apiKey = '4fea2ddd350e4b5397126f3b42e462b2';
 //
 // }
 const prepareElements = () => {
-    const cardSection = document.querySelector('.cards-container');
+        const cardSection = document.querySelector('.cards-container');
     for (let i = 0; i < currencyData.length; i++) {
         const newCard = document.createElement('div');
         newCard.id =`${currencyData[i].id}`;
@@ -38,6 +37,8 @@ const prepareElements = () => {
                  <img src='${currencyData[i].flag} ' style="box-shadow: 0 0 2em ${currencyData[i].color};">
             </div>
         `
+
+
         cardSection.appendChild(newCard);
     }
 }
@@ -49,27 +50,22 @@ const openUp = () => {
 };
 const searchBar = () => {
     const cards = document.querySelectorAll('.card');
-    console.log(cards.name)
+    const cardSection = document.querySelector('.cards-container');
     const inputValue = searchInput.value;
-    // console.log(document.querySelector(`.${inputValue}`))
+
     currencyData.forEach(card => {
-        const chuj = card.name;
-        const show = chuj.includes(inputValue);
-        console.log(show);
-        // if (show) {
-        //     cards.forEach(element => {
-        //         element.style.display = 'block'
-        //     })
-        // } else {
-        //     cards.forEach(element => {
-        //             element.style.display = 'none'
-        //     })
-        // }
-        // if (!show) {
-        //     document.querySelectorAll(`.${show}`).forEach(element => {
-        //         element.style.display = 'none'
-        //     })
-        // }
+        const names = card.name;
+        const id = card.id;
+        const symbols = card.symbol_native;
+        const show = names.includes(inputValue) || id.includes(inputValue) || symbols.includes(inputValue);
+        const element = document.querySelector(`#${id}`);
+        if (show === true){
+            element.style.display = 'flex'
+        } else {
+            element.style.display = 'none';
+        }
+        
+
     });
 };
 const closeUp = () => {
@@ -79,7 +75,6 @@ const closeUp = () => {
     menuList.classList.add('close-menu-list')
 
 };
-
 const inputClear = () => {
     clearButton.addEventListener('click', () => {
         searchInput.value = '';
