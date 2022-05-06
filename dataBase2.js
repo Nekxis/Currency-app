@@ -540,7 +540,7 @@ const currencyData=
         "code": "IRR",
         "name_plural": "Iranian rials",
         "flag": "http://flags.fmcdn.net/data/flags/normal/ir.png",
-        "color" :"red",
+        "color" :"green",
         "price":currencyPrice,
 },
 {
@@ -639,7 +639,7 @@ const currencyData=
         "code": "KWD",
         "name_plural": "Kuwaiti dinars",
         "flag": "http://flags.fmcdn.net/data/flags/normal/kw.png",
-        "color": "red",
+        "color": "green",
         "price":currencyPrice,
 },
 {
@@ -738,7 +738,7 @@ const currencyData=
         "code": "MGA",
         "name_plural": "Malagasy Ariaries",
         "flag": "http://flags.fmcdn.net/data/flags/normal/mg.png",
-        "color":"red",
+        "color":"green",
         "price":currencyPrice,
 },
 {
@@ -980,7 +980,7 @@ const currencyData=
         "code": "RON",
         "name_plural": "Romanian lei",
         "flag": "http://flags.fmcdn.net/data/flags/normal/ro.png",
-        "color":"red",
+        "color":"yellow",
         "price":currencyPrice
 },
 {
@@ -1200,7 +1200,7 @@ const currencyData=
         "code": "UZS",
         "name_plural": "Uzbekistan som",
         "flag": "http://flags.fmcdn.net/data/flags/normal/uz.png",
-        "color":"light-blue",
+        "color":"white",
         "price":currencyPrice
 },
 {
