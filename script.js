@@ -1,4 +1,4 @@
-import {currencyData, currencyPrice} from "./dataBase2.js";
+import {currencyData} from "./dataBase2.js";
 const openBtn = document.querySelector('.open');
 const closeBtn = document.querySelector('.close');
 const menuContainer = document.querySelector('.menu-container');
@@ -9,18 +9,29 @@ const clearButton = document.querySelector('.clear-input');
 const liNav = document.querySelector('li');
 const cards = document.querySelector('.card');
 const apiKey = '4fea2ddd350e4b5397126f3b42e462b2';
-// const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}&symbols=${symbol}`;
+const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}`;
+fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+        const rates = data.rates;
+        currencyData.forEach(element => {
+            Object.entries(rates).forEach(item => {
 
-// const fetchAPI = () => {
-//     fetch(url)
-//         .then((res) => res.json())
-//         .then((data) => {
-//             console.log((data));
-//         })
-//
-// }
+                if (item[0] === element.id) {
+                    element.price = parseFloat(item[1]);
+                    element.price.toFixed(2)
+                }
+
+            })
+        })
+    })
+currencyData.forEach(a => {
+    console.log(a.price)
+})
+
 const prepareElements = () => {
-        const cardSection = document.querySelector('.cards-container');
+
+    const cardSection = document.querySelector('.cards-container');
     for (let i = 0; i < currencyData.length; i++) {
         const newCard = document.createElement('div');
         newCard.id =`${currencyData[i].id}`;
@@ -40,6 +51,7 @@ const prepareElements = () => {
 
 
         cardSection.appendChild(newCard);
+        console.log(currencyData[i].price)
     }
 }
 const openUp = () => {
@@ -57,7 +69,6 @@ const searchBar = () => {
     currencyData.forEach(card => {
         const names = card.name;
         const lowerNames = card.name.toLowerCase();
-        console.log(lowerNames)
         const id = card.id;
         const lowerId = card.id.toLowerCase();
         const symbols = card.symbol_native;
@@ -103,7 +114,10 @@ closeBtn.addEventListener('click', closeUp);
 searchInput.addEventListener('keyup', inputActive);
 searchInput.addEventListener('input', searchBar);
 clearButton.addEventListener('click', () => {
-     document.location.reload();
+    currencyData.forEach(element => {
+        const card = document.querySelector(`#${element.id}`);
+        card.style.display = 'flex';
+    })
 } )
 document.addEventListener('click', (e) =>{
     if (e.target === searchInput) {
@@ -114,7 +128,5 @@ document.addEventListener('click', (e) =>{
 });
 // document.addEventListener('DOMContentLoaded', fetchAPI)
 document.addEventListener('DOMContentLoaded', prepareElements);
-
-
 
 
