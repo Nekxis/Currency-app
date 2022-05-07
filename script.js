@@ -13,13 +13,13 @@ const url = `https://api.currencyfreaks.com/latest?apikey=${apiKey}`;
 fetch(url)
     .then((res) => res.json())
     .then((data) => {
+        console.log(data);
         const rates = data.rates;
         currencyData.forEach(element => {
             Object.entries(rates).forEach(item => {
 
                 if (item[0] === element.id) {
                     element.price = parseFloat(item[1]);
-                    element.price.toFixed(2)
                     const card = document.querySelector(`#${element.id}`)
                     const cardChildren = card.firstElementChild;
                     const newValue = document.createElement('div');
@@ -54,8 +54,7 @@ const cardSection = document.querySelector('.cards-container');
         `
 
 
-        cardSection.appendChild(newCard);
-        console.log(currencyData[i].price)
+        cardSection.appendChild(newCard)
     }
 }
 const openUp = () => {

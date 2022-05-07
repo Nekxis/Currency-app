@@ -131,10 +131,10 @@ html{
 }
 .cards-container{
     display: grid;
-    grid-template-columns:  repeat(3, 2fr);
-    grid-template-rows:  repeat(3, auto);
+    grid-template-columns:  repeat(auto-fit, minmax(400px, 2fr));
+    grid-template-rows:  repeat(4, auto);
     gap: 1vw;
-    height: 80vh;
+    height: 100vh;
     padding: 10px;
     align-items: center;
     justify-items: center;
@@ -154,44 +154,47 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 70%;
+    width: 60%;
 }
 .country-name{
-    font-size: 20px;
+    align-self: flex-start;
+    font-size: 2em;
+    padding-right: 1rem;
 }
 .bottom{
+    align-self: flex-start;
     display: flex;
 }
 .bottom p {
     padding: .3em;
     font-weight: bold;
-    font-size: 15px;
-    top: 10%;
+    font-size: 2em;
     display: inline-block;
 }
 .bottom p:nth-child(1){
-    font-size: 25px;
+    font-size: 1.8em;
 
 }
 .bottom p:nth-child(2){
-    margin-top: 5%;
-    font-size: 20px;
+    font-size: 1.8em;
 }
 .flaga{
-    position: relative;
-    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
 
 }
-.flaga img{
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+.flaga img {
+    align-self: center;
     height: 60%;
     width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     border-radius: 10px;
     opacity: 80%;
     box-shadow: 0 0 2em blue;
+    margin-bottom: 4.5rem;
+
 }
 .cards-container:nth-child(1).flaga img{
     box-shadow: 0 0 2em red;

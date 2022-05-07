@@ -1,6 +1,18 @@
 const currencyData=
     // price= currencyData
     [
+
+            {       "id": "BTC",
+                    "symbol": "₿",
+                    "name": "Bitcoin",
+                    "symbol_native": "₿",
+                    "code": "BTC",
+                    "name_plural": "Bitcoins",
+                    "flag": "https://www.seekpng.com/png/detail/421-4211002_the-bitcoin-story-question-and-answer-icon.png",
+                    "color": "white",
+                    "price": ""
+
+            },
             {
                     "id": "USD",
                     "symbol": "$",
@@ -213,8 +225,8 @@ const currencyData=
             "symbol_native": "BYR",
             "code": "BYR",
             "name_plural": "Belarusian rubles",
-            "flag": "http://flags.fmcdn.net/data/flags/normal/ru.png",
-            "color":"blue",
+            "flag": "http://flags.fmcdn.net/data/flags/normal/by.png",
+            "color":"red",
             "price":""
     },{
             "id":"BZD" ,
