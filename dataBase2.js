@@ -349,16 +349,6 @@ const currencyData=
             "color":"green",
             "price":""
     },{
-            "id":"EEK" ,
-            "symbol": "Ekr",
-            "name": "Estonian Kroon",
-            "symbol_native": "kr",
-            "code": "EEK",
-            "name_plural": "Estonian kroons",
-            "flag": "http://flags.fmcdn.net/data/flags/normal/ee.png",
-            "color":"blue",
-            "price":""
-    },{
             "id":"EGP" ,
             "symbol": "EGP",
             "name": "Egyptian Pound",
@@ -675,28 +665,6 @@ const currencyData=
                     "name_plural": "Sri Lankan rupees",
                     "flag": "http://flags.fmcdn.net/data/flags/normal/lk.png",
                     "color":"yellow",
-                    "price":""
-            },
-            {
-                    "id":"LTL",
-                    "symbol": "Lt",
-                    "name": "Lithuanian Litas",
-                    "symbol_native": "Lt",
-                    "code": "LTL",
-                    "name_plural": "Lithuanian litai",
-                    "flag": "http://flags.fmcdn.net/data/flags/normal/lt.png",
-                    "color":"yellow",
-                    "price":""
-            },
-            {
-                    "id":"LVL",
-                    "symbol": "Ls",
-                    "name": "Latvian Lats",
-                    "symbol_native": "Ls",
-                    "code": "LVL",
-                    "name_plural": "Latvian lati",
-                    "flag": "http://flags.fmcdn.net/data/flags/normal/lv.png",
-                    "color":"red",
                     "price":""
             },
             {
@@ -1258,16 +1226,6 @@ const currencyData=
             "color":"red",
             "price":""
     },
-            {
-                    "id":"ZMK",
-                    "symbol": "ZK",
-                    "name": "Zambian Kwacha",
-                    "symbol_native": "ZK",
-                    "code": "ZMK",
-                    "name_plural": "Zambian kwachas",
-                    "flag": "http://flags.fmcdn.net/data/flags/normal/zm.png",
-                    "color": "green",
-                    "price":""
-            },
+
     ]
 export {currencyData}

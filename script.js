@@ -20,18 +20,25 @@ fetch(url)
                 if (item[0] === element.id) {
                     element.price = parseFloat(item[1]);
                     element.price.toFixed(2)
+                    const card = document.querySelector(`#${element.id}`)
+                    const cardChildren = card.firstElementChild;
+                    const newValue = document.createElement('div');
+                    newValue.className = 'bottom';
+                    newValue.innerHTML = `
+                        <p>${"$"}</p>
+                        <p>${element.price.toFixed(2)} ${element.symbol_native}</p>
+                    
+                    `
+                    cardChildren.append(newValue)
                 }
 
             })
         })
     })
-currencyData.forEach(a => {
-    console.log(a.price)
-})
 
 const prepareElements = () => {
 
-    const cardSection = document.querySelector('.cards-container');
+const cardSection = document.querySelector('.cards-container');
     for (let i = 0; i < currencyData.length; i++) {
         const newCard = document.createElement('div');
         newCard.id =`${currencyData[i].id}`;
@@ -39,11 +46,8 @@ const prepareElements = () => {
         newCard.innerHTML = ` 
             <div class="left-part">
                <h2 class="country-name">${currencyData[i].name}</h2>
-                  <div class="bottom">
-                           <p>${currencyData[i].symbol}</p>
-                           <p>${currencyData[i].price} ${currencyData[0].symbol_native}</p>
-                  </div>
             </div>
+            
             <div class="flaga">
                  <img src='${currencyData[i].flag} ' style="box-shadow: 0 0 2em ${currencyData[i].color};">
             </div>
@@ -126,7 +130,4 @@ document.addEventListener('click', (e) =>{
         inputContainer.style.borderBottomColor = '#d1d1d1';
     }
 });
-// document.addEventListener('DOMContentLoaded', fetchAPI)
 document.addEventListener('DOMContentLoaded', prepareElements);
-
-
