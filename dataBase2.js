@@ -32,7 +32,7 @@ const currencyData=
                     "symbol_native": "€",
                     "code": "EUR",
                     "name_plural": "euros",
-                    "flag": './7aa757c532b0a752236021195bd5a45d.jpeg',
+                    "flag": 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg',
                     "color":"blue",
                     "price":""
             },

@@ -110,6 +110,8 @@ const inputActive = () => {
         clearButton.style.display = 'none';
     }
     inputClear();
+    
+
 }
 
 openBtn.addEventListener('click', openUp);

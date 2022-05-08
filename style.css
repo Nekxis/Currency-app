@@ -132,7 +132,7 @@ html{
 }
 .cards-container{
     display: grid;
-    grid-template-columns:  repeat(3, auto);
+    grid-template-columns:  repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows:  repeat(4, auto);
     gap: 1vw;
     height: 100vh;
@@ -142,12 +142,12 @@ html{
 }
 .card{
     background: #000;
-    width: 30vw;
+    width: 100%;
     border-radius: 10px;
+    min-height: 200px;
     height: 25vh;
     color: #FFF;
     padding: 1em;
-    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -187,8 +187,11 @@ html{
 }
 .flaga img {
     align-self: center;
-    height: 60%;
+
+    min-height: 100px;
+    height: 10vh;
     width: 100%;
+    max-width: 230px;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 10px;
@@ -231,7 +234,6 @@ html{
 
     }
     .fa-bars{
-        padding-top: 10px;
          font-size: 3.4rem;
      }
     .fa-xmark{
@@ -251,5 +253,56 @@ html{
     }
     .country-name{
         font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .list-element {
+        height: 20vh;
+        padding: .7rem;
+    }
+    .list-element a {
+        align-self: center;
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+    .active{
+        width: 100vw;
+        height: 100vh;
+    }
+    .search-box{
+        height: 10vh;
+        width: 100vw;
+    }
+    .input-container{
+        width: 75vw;
+    }
+    .search-box input{
+        width: 50vw;
+    }
+    .text-field{
+        font-size: 1.1rem;
+    }
+    .fa-bars{
+        font-size: 2rem;
+    }
+    .fa-xmark{
+        font-size: 2.5rem;
+    }
+    .fa-magnifying-glass{
+        font-size: 1.7rem;
+    }
+    .x-media{
+        font-size:2rem;
+    }
+    .card{
+        height: 20vh;
+        width: 80vw;
+    }
+    .bottom{
+        font-size: 13px;
+    }
+    .country-name{
+        font-size: 25px;
     }
 }
