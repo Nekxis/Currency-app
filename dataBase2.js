@@ -2,17 +2,7 @@ const currencyData=
     // price= currencyData
     [
 
-            {       "id": "BTC",
-                    "symbol": "₿",
-                    "name": "Bitcoin",
-                    "symbol_native": "₿",
-                    "code": "BTC",
-                    "name_plural": "Bitcoins",
-                    "flag": "https://www.seekpng.com/png/detail/421-4211002_the-bitcoin-story-question-and-answer-icon.png",
-                    "color": "white",
-                    "price": ""
 
-            },
             {
                     "id": "USD",
                     "symbol": "$",
@@ -1238,6 +1228,17 @@ const currencyData=
             "color":"red",
             "price":""
     },
+            {       "id": "BTC",
+                    "symbol": "₿",
+                    "name": "Bitcoin",
+                    "symbol_native": "₿",
+                    "code": "BTC",
+                    "name_plural": "Bitcoins",
+                    "flag": "https://www.seekpng.com/png/detail/421-4211002_the-bitcoin-story-question-and-answer-icon.png",
+                    "color": "white",
+                    "price": ""
+
+            },
 
     ]
 export {currencyData}
