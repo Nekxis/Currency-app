@@ -110,7 +110,7 @@ const inputActive = () => {
         clearButton.style.display = 'none';
     }
     inputClear();
-    
+
 
 }
 
