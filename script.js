@@ -124,7 +124,7 @@ clearButton.addEventListener('click', () => {
         card.style.display = 'flex';
     })
 } )
-document.addEventListener('click', (e) =>{
+document.addEventListener('click', (e) => {
     if (e.target === searchInput) {
         inputContainer.style.borderBottomColor = '#000';
     } else {
